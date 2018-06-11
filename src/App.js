@@ -17,7 +17,7 @@ class App extends Component {
     }
 
     handleSearch = (title) => {
-        axios.get(`http://www.omdbapi.com/?apikey=2c741d7&s=${title}`)
+        axios.get(`https://www.omdbapi.com/?apikey=2c741d7&s=${title}`)
             .then( (response) => {
                 this.setState({
                     films: response.data.Search,

@@ -10,7 +10,7 @@ class Film extends Component {
     }
 
     componentDidMount(){
-        axios.get(`http://www.omdbapi.com/?apikey=2c741d7&i=${this.props.match.params.film}&plot=full`)
+        axios.get(`https://www.omdbapi.com/?apikey=2c741d7&i=${this.props.match.params.film}&plot=full`)
             .then(response => {
 
                 this.setState({ ...response.data })
